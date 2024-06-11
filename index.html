@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+        .success-message {
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form-container">
+        <label>Insira um número A</label>
+        <input type="number" placeholder="campo A" id="campo-A" required/>
+        <br/>
+        <label>Insira um número B</label>
+        <input type="number" placeholder="campo B" id="campo-B" required/>
+        <br/>
+        <button type="submit" id="botao-submit">
+            Submeter
+        </button>
+    </form>
+    <p class="success-message"> formulário correto </p>
+    <p class="error-message"> Número B deve ser maior que número A </p>
+    <script src = "./document.js"></script>
+</body>
+</html>
